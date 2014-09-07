@@ -5,38 +5,28 @@ import static java.lang.System.out;
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
+import java.math.BigInteger;
+import java.util.ArrayList;
 
 public class LargeSum {
 	public static void run() {
-		String longNumber = readfromFile("problemthirteen.txt");
-		long tenDigits = 0;
-		String tenOfThem = "";
-		for (int i = 0; i < longNumber.length() / 50; i++) {
-			// if(tenOfThem.length()<12){
-			tenDigits += Long.parseLong(longNumber.substring(i * 50 + 40,
-					(i * 50) + 50));
-			// out.println(tenOfThem);
-			tenOfThem = String.valueOf(tenDigits);
-			// }else{
-			// tenOfThem = tenOfThem.substring(1,11);
-			// out.println(tenOfThem);
-			// tenDigits = Long.parseLong(tenOfThem);
-			// tenDigits+=longNumber.charAt(i);
-			// }
-
+		BigInteger sum = new BigInteger("0");
+		ArrayList<String> file = readfromFile("problemthirteen.txt");
+		for (int i = 0; i < file.size(); i++) {
+			sum = sum.add(new BigInteger(file.get(i)));
 		}
-		// tenOfThem = tenOfThem.substring(1,10);
-		out.println("The first ten digits are: " + tenOfThem);
+		String output = sum.toString();
+		out.println("The first ten digits of the sum are: " + output.substring(0,10));
 	}
 
-	public static String readfromFile(String filename) {
+	public static ArrayList<String> readfromFile(String filename) {
 		BufferedReader br = null;
-		String file = "";
+		ArrayList<String> file = new ArrayList<String>();
 		try {
 			String line;
 			br = new BufferedReader(new FileReader(filename));
 			while ((line = br.readLine()) != null) {
-				file += line;
+				file.add(line);
 			}
 		} catch (IOException e) {
 			e.printStackTrace();

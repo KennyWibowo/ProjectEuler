@@ -2,6 +2,7 @@
 package main;
 import static java.lang.System.out;
 
+import pset.as_nineteen.CountingSundays;
 import pset.co_sixtyseven.PathSumLarge;
 
 public class Main {
@@ -22,7 +23,8 @@ public class Main {
 //		LargeSum.run();				//problem 13
 //		NumberLetters.run();		//problem 17
 //		PathSum.run();				//problem 18
-		PathSumLarge.run();			//problem 67
+		CountingSundays.run();		//problem 19
+//		PathSumLarge.run();			//problem 67
 		long endTime = System.nanoTime();        //Time end
 		timer(startTime, endTime);
 	}

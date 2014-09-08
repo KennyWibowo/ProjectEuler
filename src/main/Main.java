@@ -1,11 +1,9 @@
 
 package main;
 import static java.lang.System.out;
+import pset.au_twentyone.AmicableNumbers;
 
-import pset.am_thirteen.LargeSum;
-import pset.as_nineteen.CountingSundays;
-import pset.at_twenty.FactorialDigitSum;
-import pset.co_sixtyseven.PathSumLarge;
+
 
 public class Main {
 	public static void main(String[] args) {
@@ -22,11 +20,13 @@ public class Main {
 //		PrimeSum.run();				//problem 10
 //		GridProduct.run();			//problem 11
 //		TriangNum.run();			//problem 12
-		LargeSum.run();				//problem 13
+//		LargeSum.run();				//problem 13
+//		PowerDigitSum.run();		//problem 16
 //		NumberLetters.run();		//problem 17
 //		PathSum.run();				//problem 18
 //		CountingSundays.run();		//problem 19
 //		FactorialDigitSum.run();	//problem 20
+		AmicableNumbers.run();		//problem 21
 //		PathSumLarge.run();			//problem 67
 		long endTime = System.nanoTime();        //Time end
 		timer(startTime, endTime);

@@ -1,7 +1,7 @@
 
 package main;
 import static java.lang.System.out;
-import pset.au_twentyone.AmicableNumbers;
+import pset.av_twentytwo.NameScores;
 
 
 
@@ -26,7 +26,8 @@ public class Main {
 //		PathSum.run();				//problem 18
 //		CountingSundays.run();		//problem 19
 //		FactorialDigitSum.run();	//problem 20
-		AmicableNumbers.run();		//problem 21
+//		AmicableNumbers.run();		//problem 21
+		NameScores.run();
 //		PathSumLarge.run();			//problem 67
 		long endTime = System.nanoTime();        //Time end
 		timer(startTime, endTime);

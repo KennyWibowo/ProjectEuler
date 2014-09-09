@@ -1,14 +1,12 @@
-package pset.ap_sixteen;
+package pset.av_twentytwo;
 
 import static java.lang.System.out;
 
-import java.math.BigInteger;
-
-public class PowerDigitSum {
-	String[] names = new String[] { "MARY", "PATRICIA", "LINDA", "BARBARA",
-			"ELIZABETH", "JENNIFER", "MARIA", "SUSAN", "MARGARET", "DOROTHY",
-			"LISA", "NANCY", "KAREN", "BETTY", "HELEN", "SANDRA", "DONNA",
-			"CAROL", "RUTH", "SHARON", "MICHELLE", "LAURA", "SARAH",
+public class NameScores {
+	static String[] names = new String[] { "MARY", "PATRICIA", "LINDA",
+			"BARBARA", "ELIZABETH", "JENNIFER", "MARIA", "SUSAN", "MARGARET",
+			"DOROTHY", "LISA", "NANCY", "KAREN", "BETTY", "HELEN", "SANDRA",
+			"DONNA", "CAROL", "RUTH", "SHARON", "MICHELLE", "LAURA", "SARAH",
 			"KIMBERLY", "DEBORAH", "JESSICA", "SHIRLEY", "CYNTHIA", "ANGELA",
 			"MELISSA", "BRENDA", "AMY", "ANNA", "REBECCA", "VIRGINIA",
 			"KATHLEEN", "PAMELA", "MARTHA", "DEBRA", "AMANDA", "STEPHANIE",
@@ -825,17 +823,52 @@ public class PowerDigitSum {
 			"DARELL", "BRODERICK", "ALONSO" };
 
 	public static void run() {
-		BigInteger num = new BigInteger("1");
-		for (int i = 0; i < 1000; i++) {
-			num = num.multiply(new BigInteger("2"));
-		}
-		char[] output = num.toString().toCharArray();
-		int sum = 0;
 
-		for (int i = 0; i < output.length; i++) {
-			sum += Integer.valueOf(String.valueOf(output[i]));
+		int score = 0;
+		sortAlphabetically(names);
+		for (int i = 0; i < names.length; i++) {
+			int temp = 0;
+
+			for (int j = 0; j < names[i].length(); j++)
+				temp += names[i].charAt(j) - 'A' + 1;
+
+			score += (i + 1) * temp;
 		}
-		out.println("The sum of the digits of 2^1000 is " + sum);
+		out.println("The total score of the names is " + score);
 	}
 
+	public static void sortAlphabetically(String[] a) {
+		if (a.length >= 2) {
+			String[] left = new String[a.length / 2];
+			String[] right = new String[a.length - a.length / 2];
+
+			for (int i = 0; i < left.length; i++) {
+				left[i] = a[i];
+			}
+			for (int i = 0; i < right.length; i++) {
+				right[i] = a[i + a.length / 2];
+			}
+
+			sortAlphabetically(left);
+			sortAlphabetically(right);
+
+			merge(a, left, right);
+		}
+	}
+
+	public static void merge(String[] result, String[] left, String[] right) {
+		int i1 = 0;
+		int i2 = 0;
+		for (int i = 0; i < result.length; i++) {
+			if (i2 >= right.length
+					|| (i1 < left.length && left[i1]
+							.compareToIgnoreCase(right[i2]) < 0)) {
+				result[i] = left[i1];
+				i1++;
+			} else {
+				result[i] = right[i2];
+				i2++;
+			}
+		}
+	}
 }

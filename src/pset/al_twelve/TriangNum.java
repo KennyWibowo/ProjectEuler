@@ -1,6 +1,5 @@
 package pset.al_twelve;
 import static java.lang.System.out;
-import java.util.ArrayList;
 
 
 public class TriangNum {

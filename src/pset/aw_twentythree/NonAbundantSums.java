@@ -33,16 +33,15 @@ public class NonAbundantSums {
 		out.println("Problem 23: The sum of these numbers is " + sum);
 	}
 
-	public static boolean isAbundant(int input) {
+	private static boolean isAbundant(int input) {
 		int sum = 0;
-		for (int i = 1; i < input; i++) {
-			if (input % i == 0) {
+		for (int i = 1; i < input; i++)
+			if (input % i == 0) 
 				sum += i;
-			}
-		}
-		if (sum > input) {
+			
+		if (sum > input) 
 			return true;
-		}
+		
 		return false;
 	}
 }

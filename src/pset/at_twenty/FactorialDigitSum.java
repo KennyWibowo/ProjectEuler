@@ -7,9 +7,9 @@ public class FactorialDigitSum {
 	public static void run() {
 		char[] bigNumber = factorial(100).toString().toCharArray();
 		int sum = 0;
-		for(int i=0; i<bigNumber.length; i++){
+		for(int i=0; i<bigNumber.length; i++)
 			sum += Integer.parseInt(String.valueOf(bigNumber[i]));
-		}
+		
 		out.println("Problem 20: The sum of 100!'s digits is " + sum);
 	}
 

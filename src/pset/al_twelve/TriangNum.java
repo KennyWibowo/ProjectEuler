@@ -1,34 +1,33 @@
 package pset.al_twelve;
+
 import static java.lang.System.out;
 
-
 public class TriangNum {
-	public static void run(){
-		long current = 1;
-		long triang = 0;
-		long divisor = 500;
-		boolean notfound = true;
-		while(notfound){
-			triang = 0;
-			for(int i = 1; i<=current; i++){
-				triang+=i;
-			}
-			if(factorNum(triang)<divisor){
-				current++;
-			}else{
-				notfound = false;
-			}
+	public static void run() {
+		long triang = 1;
+		long i = 2;
+		 
+		while(factorNum(triang) < 500){
+		    triang += i;
+		    i++;
 		}
-		out.println("Problem 12: The " + current + "th triangular number with a value of " + triang + " has over " + divisor + " divisors.");
+		out.println("Problem 12: The triangular number with a value of " + triang + " has over 500 divisors.");
 	}
-	private static long factorNum(long num){
-		long factors = 0;
-		
-		for(long i=1; i < num/2; i++)
-			if(num%i==0)
-				factors++;
-		
-		factors++;
-		return factors;
+
+	private static long factorNum(long input) {
+	    long factors = 0;
+	    int sqrt = (int) Math.sqrt(input);
+	 
+	    for(int i = 1; i<= sqrt; i++){
+	        if(input % i == 0){
+	            factors += 2;
+	        }
+	    }
+	    //Correction if the number is a perfect square
+	    if (sqrt * sqrt == input) {
+	        factors--;
+	    }
+	 
+	    return factors;
 	}
 }

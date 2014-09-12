@@ -837,7 +837,7 @@ public class NameScores {
 		out.println("Problem 22: The total score of the names is " + score);
 	}
 
-	public static void sortAlphabetically(String[] a) {
+	private static void sortAlphabetically(String[] a) {
 		if (a.length >= 2) {
 			String[] left = new String[a.length / 2];
 			String[] right = new String[a.length - a.length / 2];
@@ -856,7 +856,7 @@ public class NameScores {
 		}
 	}
 
-	public static void merge(String[] result, String[] left, String[] right) {
+	private static void merge(String[] result, String[] left, String[] right) {
 		int i1 = 0;
 		int i2 = 0;
 		for (int i = 0; i < result.length; i++) {

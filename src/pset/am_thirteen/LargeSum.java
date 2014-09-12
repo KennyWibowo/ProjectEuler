@@ -19,7 +19,7 @@ public class LargeSum {
 		out.println("Problem 13: The first ten digits of the sum are: " + output.substring(0,10));
 	}
 
-	public static ArrayList<String> readfromFile(String filename) {
+	private static ArrayList<String> readfromFile(String filename) {
 		BufferedReader br = null;
 		ArrayList<String> file = new ArrayList<String>();
 		try {

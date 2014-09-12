@@ -13,13 +13,10 @@ public class PathSum {
 		ArrayList<ArrayList<Integer>> tempPaths = readfromFile("problemeighteen.txt");
 		int[][] paths = new int[tempPaths.get(tempPaths.size() - 1).size()][tempPaths
 				.size()];
-		for (int i = 0; i < tempPaths.size(); i++) {
-			for (int j = 0; j < tempPaths.get(i).size(); j++) {
+		for (int i = 0; i < tempPaths.size(); i++)
+			for (int j = 0; j < tempPaths.get(i).size(); j++)
 				paths[i][j] = tempPaths.get(i).get(j);
-				// out.print(paths[i][j] + " ");
-			}
-			// out.println();
-		}
+
 		for (int i = paths.length - 2; i >= 0; i--) {
 			for (int j = 0; j <= i; j++) {
 				paths[i][j] += Math.max(paths[i + 1][j], paths[i + 1][j + 1]);
@@ -31,7 +28,7 @@ public class PathSum {
 
 	}
 
-	public static ArrayList<ArrayList<Integer>> readfromFile(String filename) {
+	private static ArrayList<ArrayList<Integer>> readfromFile(String filename) {
 		BufferedReader br = null;
 		ArrayList<ArrayList<Integer>> file = new ArrayList<ArrayList<Integer>>();
 		try {

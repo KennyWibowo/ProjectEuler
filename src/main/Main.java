@@ -28,19 +28,19 @@ import pset.co_sixtyseven.PathSumLarge;
 
 public class Main {
 	public static void main(String[] args) {
-		long startTime = System.nanoTime();      //Time start
+		long startTime = System.currentTimeMillis();      //Time start
 		ThreeFiveSum.run();			//problem 1
 		Fibonacchi.run();			//problem 2
 		PrimeFactor.run();			//problem 3
 		Palindrome.run();			//problem 4
-//		SmallestMultiple.run();		//problem 5
+		SmallestMultiple.run();		//problem 5
 		SumsAndSquares.run();		//problem 6
 		MorePrimes.run();			//problem 7
 		ProductSeries.run();		//problem 8
 		PythagTriple.run();			//problem 9
 		PrimeSum.run();				//problem 10
 		GridProduct.run();			//problem 11
-//		TriangNum.run();			//problem 12
+		TriangNum.run();			//problem 12
 		LargeSum.run();				//problem 13
 		PowerDigitSum.run();		//problem 16
 //		NumberLetters.run();		//problem 17
@@ -51,16 +51,17 @@ public class Main {
 		NameScores.run();			//problem 22
 		NonAbundantSums.run();		//problem 23
 		PathSumLarge.run();			//problem 67
-		long endTime = System.nanoTime();        //Time end
-		timer(startTime, endTime);
+		long endTime = System.currentTimeMillis();        //Time end
+		out.println("\n" + (endTime-startTime) + " ms taken to complete calculations.");
 	}
-	private static void timer(long start, long finish){
+	private static void timer(long start, long finish){ //Deprecated, takes in different nanoTime() readings and prints time in between in seconds.
 		long timeTaken = finish - start;
 		String timeFormatted = "0.";
 		int count = String.valueOf(timeTaken).length();
 		for(int i = 9-count; i>0; i--)
 			timeFormatted += "0";
 		timeFormatted += String.valueOf(timeTaken);
-		out.println("\n" + timeFormatted + " seconds taken to complete calculations.");
+		out.println("\n" + timeFormatted + " ms taken to complete calculations.");
+
 	}
 }

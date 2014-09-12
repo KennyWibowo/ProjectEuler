@@ -26,7 +26,7 @@ public class PathSum {
 			}
 		}
 
-		out.println("The sum of the maximum total from top to bottom is "
+		out.println("Problem 18: The sum of the maximum total from top to bottom is "
 				+ paths[0][0]);
 
 	}

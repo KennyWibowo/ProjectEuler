@@ -10,7 +10,7 @@ public class FactorialDigitSum {
 		for(int i=0; i<bigNumber.length; i++){
 			sum += Integer.parseInt(String.valueOf(bigNumber[i]));
 		}
-		out.println("The sum of 100!'s digits is " + sum);
+		out.println("Problem 20: The sum of 100!'s digits is " + sum);
 	}
 
 	public static BigInteger factorial(BigInteger input) {

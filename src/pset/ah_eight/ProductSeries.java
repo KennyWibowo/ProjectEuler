@@ -16,6 +16,6 @@ public class ProductSeries {
 				max = temp;
 			}
 		}
-		out.println(max + " is the maximum product found in the series");
+		out.println("Problem 8: " + max + " is the maximum product found in the series");
 	}
 }

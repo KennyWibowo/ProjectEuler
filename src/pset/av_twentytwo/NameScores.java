@@ -834,7 +834,7 @@ public class NameScores {
 
 			score += (i + 1) * temp;
 		}
-		out.println("The total score of the names is " + score);
+		out.println("Problem 22: The total score of the names is " + score);
 	}
 
 	public static void sortAlphabetically(String[] a) {

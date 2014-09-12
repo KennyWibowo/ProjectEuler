@@ -9,9 +9,9 @@ public class MorePrimes {
 			while(isNotPrime(prime)){
 				prime++;
 			}
-			out.println(prime + " is the " + i +"th prime number.");
 			prime++;
 		}
+		out.println("Problem 7: " + prime + " is the 10001th prime number.");
 
 	}
 	public static boolean isNotPrime(long n){

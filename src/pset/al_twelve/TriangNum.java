@@ -19,7 +19,7 @@ public class TriangNum {
 				notfound = false;
 			}
 		}
-		out.println("The " + current + "th triangular number with a value of " + triang + " has over " + divisor + " divisors.");
+		out.println("Problem 12: The " + current + "th triangular number with a value of " + triang + " has over " + divisor + " divisors.");
 	}
 	private static long factorNum(long num){
 		long factors = 0;

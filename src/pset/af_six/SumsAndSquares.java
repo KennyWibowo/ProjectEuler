@@ -10,6 +10,6 @@ public class SumsAndSquares {
 		for(int i=1; i<=100; i++)
 			squaresum += i;
 		squaresum = (long) Math.pow(squaresum, 2);
-		out.println(squaresum + " - " + sumsquare + " = " + (squaresum-sumsquare));
+		out.println("Problem 6: "+ squaresum + " - " + sumsquare + " = " + (squaresum-sumsquare));
 	}
 }

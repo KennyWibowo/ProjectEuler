@@ -9,7 +9,7 @@ public class PythagTriple {
 			for(int b=a+1; b<=sum/2; b++){
 				c = sum - (a + b);
 				if ( c > 0 && (a*a + b*b == c*c) )
-		               out.printf("a = %d, b = %d, c = %d, a*b*c = %d\n",a,b,c, a*b*c);
+		               out.printf("Problem 9: a = %d, b = %d, c = %d, a*b*c = %d\n",a,b,c, a*b*c); //formatted cuz it's easier to print
 			}
 			
 	}

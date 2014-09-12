@@ -24,7 +24,7 @@ public class Palindrome {
 				}
 			}
 		}
-		out.println("Problem 4: Number of palindromes: " + palindromes.size());
+//		out.println("Problem 4: Number of palindromes: " + palindromes.size());
 		out.println("Problem 4: Largest palindrome: " + getLargest(palindromes));
 	}
 

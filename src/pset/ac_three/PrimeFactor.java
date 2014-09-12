@@ -13,8 +13,9 @@ public class PrimeFactor {
 				num /= i;
 			}
 		}
-		out.println("Problem 3: The primes of the given big number are:");
+		out.print("Problem 3: The primes of the given big number are:");
 		for(int i=0; i<primes.size(); i++)
-			out.println(primes.get(i));
+			out.print(" " + primes.get(i));
+		out.println();
 	}
 }

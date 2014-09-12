@@ -10,7 +10,7 @@ public class AmicableNumbers {
 				sum += i;
 			}
 		}
-		out.println("The sum of all amicable pairs under 10,000 is " + sum);
+		out.println("Problem 21: The sum of all amicable pairs under 10,000 is " + sum);
 	}
 	public static boolean amicability(int input){
 		int pair = divisorSum(input);

@@ -90,7 +90,7 @@ public class GridProduct {
 			}
 		}
 
-		out.println("The biggest product is: " + product);
+		out.println("Problem 11: The biggest product is: " + product);
 	}
 
 }

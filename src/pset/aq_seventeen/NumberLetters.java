@@ -77,7 +77,7 @@ public class NumberLetters {
 			}
 
 		}
-		out.println("The sum of the number of letters in numbers 1-1000 is "
+		out.println("Problem 17: The sum of the number of letters in numbers 1-1000 is "
 				+ sum);
 	}
 }

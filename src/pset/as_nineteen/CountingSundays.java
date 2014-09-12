@@ -24,6 +24,6 @@ public class CountingSundays {
 			
 		}
 
-		out.println("The number of sundays is " + sundays);
+		out.println("Problem 19: The number of sundays is " + sundays);
 	}
 }

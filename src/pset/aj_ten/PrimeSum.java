@@ -9,7 +9,7 @@ public class PrimeSum {
 				sum+=i;
 			}
 				
-		out.println("The sum of all prime numbers below 2000000 is: " + sum);
+		out.println("Problem 10: The sum of all prime numbers below 2000000 is: " + sum);
 	}
 	public static boolean isPrime(long n){
 		for(int j=2;j<=Math.sqrt(n);j++){

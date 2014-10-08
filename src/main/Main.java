@@ -43,7 +43,7 @@ public class Main {
 		TriangNum.run();			//problem 12
 		LargeSum.run();				//problem 13
 		PowerDigitSum.run();		//problem 16
-//		NumberLetters.run();		//problem 17
+		NumberLetters.run();		//problem 17
 		PathSum.run();				//problem 18
 		CountingSundays.run();		//problem 19
 		FactorialDigitSum.run();	//problem 20

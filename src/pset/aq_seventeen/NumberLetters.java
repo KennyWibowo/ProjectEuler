@@ -8,16 +8,19 @@ public class NumberLetters {
 		int sum = 0;
 		for (int i = 1; i <= 1000; i++)
 			sum += toEnglish(i).length();
-		out.println("Problem 17: The sum of the characters of the numbers is " + sum);
+		out.println("Problem 17: The sum of the characters of the numbers is "
+				+ sum);
 	}
-	
-	
-	private static String[] uno = {"zero", "one", "two", "three", "four", "five", "six", "seven", "eight", "nine"};
-	private static String[] diez = {"ten", "eleven", "twelve", "thirteen", "fourteen", "fifteen", "sixteen", "seventeen", "eighteen", "nineteen"};
-	private static String[] veinte = {"twenty", "thirty", "forty", "fifty", "sixty", "seventy", "eighty", "ninety"};
-	
-	
-	private static String toEnglish(int n) {	
+
+	private static String[] uno = { "zero", "one", "two", "three", "four",
+			"five", "six", "seven", "eight", "nine" };
+	private static String[] diez = { "ten", "eleven", "twelve", "thirteen",
+			"fourteen", "fifteen", "sixteen", "seventeen", "eighteen",
+			"nineteen" };
+	private static String[] veinte = { "twenty", "thirty", "forty", "fifty",
+			"sixty", "seventy", "eighty", "ninety" };
+
+	private static String toEnglish(int n) {
 		if (n < 100)
 			return tens(n);
 		else {
@@ -26,12 +29,11 @@ public class NumberLetters {
 				big += tens(n / 1000) + "thousand";
 			if (n / 100 % 10 != 0)
 				big += uno[n / 100 % 10] + "hundred";
-			
+
 			return big + (n % 100 != 0 ? "and" + tens(n % 100) : "");
 		}
 	}
-	
-	
+
 	private static String tens(int n) {
 		if (n < 10)
 			return uno[n];

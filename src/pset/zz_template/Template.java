@@ -1,4 +1,4 @@
-package main;
+package pset.zz_template;
 import static java.lang.System.out;
 
 public class Template {

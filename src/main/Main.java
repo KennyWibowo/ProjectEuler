@@ -23,6 +23,7 @@ import pset.au_twentyone.AmicableNumbers;
 import pset.av_twentytwo.NameScores;
 import pset.aw_twentythree.NonAbundantSums;
 import pset.ay_twentyfive.BigFibonacci;
+import pset.az_twentysix.ReciprocalCycles;
 import pset.co_sixtyseven.PathSumLarge;
 
 public class Main {
@@ -31,7 +32,7 @@ public class Main {
 //		ThreeFiveSum.run(); 		// problem 1
 //		Fibonacchi.run(); 			// problem 2
 //		PrimeFactor.run(); 			// problem 3
-		Palindrome.run(); 			// problem 4
+//		Palindrome.run(); 			// problem 4
 //		SmallestMultiple.run(); 	// problem 5
 //		SumsAndSquares.run(); 		// problem 6
 //		MorePrimes.run(); 			// problem 7
@@ -50,6 +51,7 @@ public class Main {
 //		NameScores.run(); 			// problem 22
 //		NonAbundantSums.run(); 		// problem 23
 //		BigFibonacci.run();			// problem 25
+		ReciprocalCycles.run();		// problem 26
 //		PathSumLarge.run(); 		// problem 67
 		long endTime = System.currentTimeMillis(); // Time end
 		out.println("\n" + (endTime - startTime)

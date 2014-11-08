@@ -9,4 +9,4 @@ Problems finished (Source code included and functional):
 1,2,3,4,6,7,8,9,10,11,12,13,16,17,18,19,20,21,22,23,67
 
 Problems in progress (Source code included, but non-functional):
-n/a
+26

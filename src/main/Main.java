@@ -33,7 +33,7 @@ public class Main {
 //		Fibonacchi.run(); 			// problem 2
 //		PrimeFactor.run(); 			// problem 3
 //		Palindrome.run(); 			// problem 4
-//		SmallestMultiple.run(); 	// problem 5
+		SmallestMultiple.run(); 	// problem 5
 //		SumsAndSquares.run(); 		// problem 6
 //		MorePrimes.run(); 			// problem 7
 //		ProductSeries.run(); 		// problem 8

@@ -7,8 +7,8 @@ Dependencies
 
 Compiling
 ---------
-> *$ ant* or *$ ant compile* in . to compile java files in src to build.
+> **$ ant** or **$ ant compile** in . to compile java files in src to build.
 
 Running
 -------
-> *$ java main/Main [problem number]* in ./build
+> **$ java main/Main [problem number]** in ./build

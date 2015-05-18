@@ -28,35 +28,105 @@ import pset.co_sixtyseven.PathSumLarge;
 
 public class Main {
 	public static void main(String[] args) {
+        if ( args.length != 1 ) {
+            System.out.println( "Error: need 1 param to specify problem number
+        }
+
+        int arg1 = Integer.parseInt( args[1] );
+
 		long startTime = System.currentTimeMillis(); // Time start
-//		ThreeFiveSum.run(); 		// problem 1
-//		Fibonacchi.run(); 			// problem 2
-//		PrimeFactor.run(); 			// problem 3
-//		Palindrome.run(); 			// problem 4
-		SmallestMultiple.run(); 	// problem 5
-//		SumsAndSquares.run(); 		// problem 6
-//		MorePrimes.run(); 			// problem 7
-//		ProductSeries.run(); 		// problem 8
-//		PythagTriple.run(); 		// problem 9
-//		PrimeSum.run(); 			// problem 10
-//		GridProduct.run(); 			// problem 11 
-//		TriangNum.run(); 			// problem 12
-//		LargeSum.run(); 			// problem 13
-//		PowerDigitSum.run(); 		// problem 16
-//		NumberLetters.run(); 		// problem 17
-//		PathSum.run();				// problem 18
-//		CountingSundays.run(); 		// problem 19
-//		FactorialDigitSum.run(); 	// problem 20
-//		AmicableNumbers.run(); 		// problem 21
-//		NameScores.run(); 			// problem 22
-//		NonAbundantSums.run(); 		// problem 23
-//		BigFibonacci.run();			// problem 25
-		ReciprocalCycles.run();		// problem 26
-//		PathSumLarge.run(); 		// problem 67
+
+        switch ( arg1 ) {
+            case 1:
+                ThreeFiveSum.run();         // problem 1
+                break;
+            case 2:
+        		Fibonacchi.run();           // problem 2
+                break;
+            case 3:
+                PrimeFactor.run();          // problem 3
+                break;
+            case 4:
+                Palindrome.run();           // problem 4
+                break;
+            case 5:
+                SmallestMultiple.run();     // problem 5
+                break;
+            case 6:
+                SumsAndSquares.run();       // problem 6
+                break;
+            case 7:
+                MorePrimes.run();           // problem 7
+                break;
+            case 8:
+                ProductSeries.run();        // problem 8
+                break;
+            case 9:
+                PythagTriple.run();         // problem 9
+                break;
+            case 10:
+                PrimeSum.run();             // problem 10
+                break;
+            case 11:
+                GridProduct.run();          // problem 11 
+                break;
+            case 12:
+                TriangNum.run();            // problem 12
+                break;
+            case 13:
+                LargeSum.run();             // problem 13
+                break;
+            case 14:
+                break;
+            case 16:
+                PowerDigitSum.run();        // problem 16
+                break;
+            case 17:
+                NumberLetters.run();        // problem 17
+                break;
+            case 18:
+                PathSum.run();              // problem 18
+                break;
+            case 19:
+                CountingSundays.run();      // problem 19
+                break;
+            case 20:
+                FactorialDigitSum.run();    // problem 20
+                break;
+            case 21:
+                AmicableNumbers.run();      // problem 21
+                break;
+            case 22:
+                NameScores.run();           // problem 22
+                break;
+            case 23:
+                NonAbundantSums.run();      // problem 23
+                break;
+            case 25:
+                BigFibonacci.run();         // problem 25
+                break;
+            case 26:
+	            ReciprocalCycles.run();     // problem 26
+                break;
+            case 67:
+                PathSumLarge.run(); 		// problem 67
+                break;
+            default:
+                programIncomplete( arg1 );
+                break;
+        }
+
 		long endTime = System.currentTimeMillis(); // Time end
-		out.println("\n" + (endTime - startTime)
+		
+        System.out.println("\n" + (endTime - startTime)
 				+ " ms taken to complete calculations.");
 	}
+
+    private static void programIncomplete( int problem ) {
+        
+        System.out.println( "Problem " + problem + " is not yet complete." );
+        
+    }
 
 	private static void timer(long start, long finish) { // Deprecated, takes in
 															// different

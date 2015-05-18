@@ -1,20 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project name="Project Euler" default="compile" basedir=".">
 
+    <!-- Initialize path and name variables -->
     <property name="src.dir" location="src" />
+    <property name="main.dir" location="src/main" />
     <property name="build.dir" location="build" />
     <property name="project.name" value="Project Euler" />
 
+    <!-- Deletes the .class files located in build -->
     <target name="clean" description="delete .class files">
         <delete dir="${build.dir}" />
     </target>
 
+    <!-- Creates the directories for .java and .class files -->
     <target name="makedir" description="make the directories">
         <mkdir dir="${build.dir}" />
         <mkdir dir="${src.dir}" />
+        <mkdir dir="${main.dir}" />
     </target>
 
-    <target name="compile" depends="makedir" description="compile the source">
+    <!-- Compiles the .java files from src and places 
+         the resulting .class files into build. -->
+    <target name="compile" depends="clean,makedir" description="compile the source">
 	    <javac srcdir="${src.dir}" destdir="${build.dir}" />
     </target>
 </project>

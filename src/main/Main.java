@@ -28,8 +28,10 @@ import pset.co_sixtyseven.PathSumLarge;
 
 public class Main {
 	public static void main(String[] args) {
+
         if ( args.length != 1 ) {
-            System.out.println( "Error: need 1 param to specify problem number
+            System.out.println( 
+                    "Error: need 1 param to specify problem number " );
         }
 
         int arg1 = Integer.parseInt( args[1] );

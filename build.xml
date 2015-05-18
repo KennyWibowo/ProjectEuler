@@ -9,7 +9,8 @@
 
     <!-- Deletes the .class files located in build -->
     <target name="clean" description="delete .class files">
-        <delete dir="${build.dir}" />
+        <delete dir="${build.dir}/main" />
+        <delete dir="${build.dir}/pset" />
     </target>
 
     <!-- Creates the directories for .java and .class files -->
@@ -21,7 +22,16 @@
 
     <!-- Compiles the .java files from src and places 
          the resulting .class files into build. -->
-    <target name="compile" depends="clean,makedir" description="compile the source">
+    <target name="compile" depends="makedir" description="compiles into build">
 	    <javac srcdir="${src.dir}" destdir="${build.dir}" />
     </target>
+
+    <target name="help" description="displays build usage">
+        <echo>Usage: ant [target]</echo>
+        <echo>    targets:</echo>
+        <echo>      clean - deletes .class files located in ./build </echo>
+        <echo>      makedir - creates paths that project depends on </echo>
+        <echo>      compile (default) - compiles .java files from ./src into ./build </echo>
+    </target>
+
 </project>

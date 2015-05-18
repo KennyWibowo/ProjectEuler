@@ -2,7 +2,6 @@
 
 Created in Java by Kenny Wibowo
 
-
 ## Dependencies ##
 
 Requires the following to compile and clean:
@@ -16,6 +15,10 @@ In order to compile the code, run either of the following commands in the root d
 
 	ant
 	ant compile
+
+You may also run the following for a list of usage regarding ant targets:
+
+	ant help
 
 ## Running ##
 

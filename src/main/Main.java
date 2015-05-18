@@ -12,7 +12,7 @@ public class Main {
             System.exit( -1 );
         }
 
-        int arg1 = Integer.parseInt( args[1] );
+        int arg1 = Integer.parseInt( args[0] );
 
         if ( arg1 < 1 ) {
             System.out.println(

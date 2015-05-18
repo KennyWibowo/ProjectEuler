@@ -1,12 +1,14 @@
 Project Euler solutions, created in Java by Kenny Wibowo
+========================================================
 
-How to work:
-In Main.java, run the static method [ProjectName].run() in the main method.
-Each problem is accessed with ease through commenting/uncommenting.
-Names of specific problems are located in designated folders within "pset".
+Dependencies
+------------
+> Requires *java* and *ant* to compile and clean.
 
-Problems finished (Source code included and functional):
-1,2,3,4,6,7,8,9,10,11,12,13,16,17,18,19,20,21,22,23,67
+Compiling
+---------
+> *$ ant* or *$ ant compile* in . to compile java files in src to build.
 
-Problems in progress (Source code included, but non-functional):
-26
+Running
+-------
+> *$ java main/Main [problem number]* in ./build

@@ -86,6 +86,9 @@ public class Main {
             case 23:
                 Twentythree.run();  // problem 23
                 break;
+            case 24:
+                Twentyfour.run();   // problem 24
+                break;
             case 25:
                 Twentyfive.run();   // problem 25
                 break;

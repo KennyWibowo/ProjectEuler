@@ -1,8 +1,11 @@
 package pset;
-import static java.lang.System.out;
 
 public class Template {
-	public static void run(){
-		out.println(/**answer*/);
+	
+	private static final int NUM_PROBLEM = 0;
+	
+	public static void run() {
+		System.out.println("Problem " + NUM_PROBLEM + ":");
 	}
+	
 }

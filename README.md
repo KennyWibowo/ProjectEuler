@@ -1,14 +1,22 @@
-Project Euler solutions, created in Java by Kenny Wibowo
-========================================================
+## Project Euler solutions ##
+Created in Java by Kenny Wibowo
+-------------------------------
 
-Dependencies
-------------
-> Requires *java* and *ant* to compile and clean.
+###Dependencies
+Requires the following to compile and clean:
 
-Compiling
----------
-> **$ ant** or **$ ant compile** in . to compile java files in src to build.
+	java
+	ant
 
-Running
--------
-> **$ java main/Main [problem number]** in ./build
+###Compiling
+
+In order to compile the code, run either of the following commands in the root directory:
+
+	ant
+	ant compile
+
+###Running
+
+Use the following command in the build directory:
+
+	java main/Main [problem number]

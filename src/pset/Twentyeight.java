@@ -1,12 +1,12 @@
 package pset;
 
 public class Twentyeight {
-	
-	private static final int NUM_PROBLEM = 28;
-	
-	public static void run() {
-		System.out.println("Problem " + NUM_PROBLEM + ": " + getCornerSum(1001) );
-	}
+    
+    private static final int NUM_PROBLEM = 28;
+    
+    public static void run() {
+        System.out.println("Problem " + NUM_PROBLEM + ": " + getCornerSum(1001) );
+    }
 
     public static int getCornerSum( int sidelen ) {
 
@@ -32,5 +32,5 @@ public class Twentyeight {
 
         return totalSum;
     }
-	
+    
 }

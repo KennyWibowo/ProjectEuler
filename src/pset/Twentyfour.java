@@ -2,16 +2,16 @@ package pset;
 import java.util.*;
 
 public class Twentyfour {
-	
-	private static final int NUM_PROBLEM = 24;
-	private static final String digits = "0123456789";
     
-	public static void run() {
+    private static final int NUM_PROBLEM = 24;
+    private static final String digits = "0123456789";
+    
+    public static void run() {
         ArrayList<String> perms = new ArrayList<String>();
         permutation( "", digits, perms );
         Collections.sort( perms );
-		System.out.println("Problem " + NUM_PROBLEM + ": " + perms.get(999999));
-	}
+        System.out.println("Problem " + NUM_PROBLEM + ": " + perms.get(999999));
+    }
 
     private static void permutation( String prefix, String str, 
                                         ArrayList<String> perms ) {

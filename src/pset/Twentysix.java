@@ -1,6 +1,6 @@
 package pset;
 
-import static java.lang.System.out;
+import java.util.*;
 
 import java.math.BigDecimal;
 
@@ -16,22 +16,20 @@ public class Twentysix {
 //			}
 //		}
 		
-		out.println("Problem 26: " + getRepeatingDecimal(12));
+        // System.out.println("Problem 26: " + getRepeatingDecimal(12));
 	}
-	private static int getRepeatingDecimal(int input){
-		int repetition = 0;
-		int numerator = 7;
-		while(numerator<input){
-			numerator*=10;
-		}
-		
-		do{
-			numerator %= input;
-			numerator *= 10;
-			repetition++;
-			out.println(numerator);
-		}while(numerator != 0 && numerator != 40);
-		
-		return repetition;
-	}
+
+    private static int repeats( int input ) {
+       return 0; 
+
+    }
+	private static int getRepetition(int divisor){
+        String quotientbuilder;
+        // ArrayList<Integer>
+        int dividend = 1;
+        boolean repeats = false;
+        
+        // while(
+        return 0;
+    }
 }
